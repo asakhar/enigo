@@ -37,7 +37,8 @@ impl Error for ParseError {
 }
 impl fmt::Display for ParseError {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        f.write_str(self.description())
+        #[allow(deprecated)]
+        f.write_str(Error::description(self))
     }
 }
 

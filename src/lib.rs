@@ -1,3 +1,5 @@
+#![allow(deprecated)]
+
 //! Enigo lets you simulate mouse and keyboard input-events as if they were
 //! made by the actual hardware. The goal is to make it available on different
 //! operating systems like Linux, macOS and Windows – possibly many more but
